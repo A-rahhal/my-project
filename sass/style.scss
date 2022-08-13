@@ -1,0 +1,70 @@
+@import 'vars';
+@import 'button';
+
+$body-font: Helvetica, sans-srrif;
+
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;    
+}
+
+a {
+    color: $links-color;
+    text-decoration: none;
+    :hover{
+        color: yellow;
+    }
+}
+
+hover{
+    color: yellow;
+}
+
+body{
+
+    background-color: $body-color;
+    font-family: $body-font;
+    line-height: 1.6;
+    
+    }
+.showcase{
+    background-color: $primary-color;
+    color: $heading-color;
+    height: 600px;
+    padding: 15px 25px;
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        ul{
+            list-style-type: none;
+            display: flex;
+            li{
+                padding: 15px;
+            }
+        }
+        a{
+            &:hover{
+                color:$links-color-hover;
+            }
+        }
+    }
+
+
+    &-container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 50%;
+        }
+    }
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
